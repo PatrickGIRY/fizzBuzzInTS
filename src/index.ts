@@ -1,4 +1,4 @@
 
 export function printIt(n:number):string {
-  return "1";
+  return n.toString();
 }
