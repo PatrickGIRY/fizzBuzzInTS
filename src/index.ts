@@ -15,7 +15,7 @@ const rules: Rule[] = [
 ];
 
 export function printIt(n:number):string {
-  const result:string = rules
+  const result: string = rules
           .filter(({ predicate }) => predicate(n))
           .map(({ mapping }) => mapping)
           .join('');
