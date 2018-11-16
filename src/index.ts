@@ -1,7 +1,7 @@
 
 interface Rule {
-  predicate: (n: number) => boolean;
-  mapping: string;
+  readonly predicate: (n: number) => boolean;
+  readonly mapping: string;
 }
 
 const multipleOf: (m: number) => (n: number) => boolean =
