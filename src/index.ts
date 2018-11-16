@@ -11,6 +11,6 @@ export function printIt(n:number):string {
   let result:string = rules
           .filter(rule => rule[0](n))
           .map(rule => rule[1])
-          .reduce((r, s) => r += s, "");
+          .join('');
   return result != "" ? result : n.toString();
 }
