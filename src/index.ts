@@ -1,5 +1,4 @@
-const world = '🗺️';
 
-export function hello(word: string = world): string {
-  return `Hello ${world}! `;
+export function printIt(n:number):string {
+  return "1";
 }
