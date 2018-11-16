@@ -1,8 +1,13 @@
 
-const multipleOf: (m:number) => (n:number) => boolean =
+interface Rule {
+  predicate: (n: number) => boolean;
+  mapping: string;
+}
+
+const multipleOf: (m: number) => (n: number) => boolean =
   (m => n => n % m === 0);
 
-const rules: { predicate :(n:number) => boolean, mapping: string }[] = [
+const rules: Rule[] = [
   { predicate: multipleOf(3), mapping: 'Fizz' },
   { predicate: multipleOf(5), mapping: 'Buzz' },
 ];
