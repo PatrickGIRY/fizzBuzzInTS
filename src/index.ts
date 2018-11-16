@@ -1,8 +1,9 @@
 
 export function printIt(n:number):string {
+  let result:string = "";
   if(n % 3 == 0)
-    return "Fizz";
+    result += "Fizz";
   if(n % 5 == 0)
-    return "Buzz";
-  return n.toString();
+    result += "Buzz";
+  return result != "" ? result : n.toString();
 }
