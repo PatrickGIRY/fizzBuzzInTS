@@ -1,6 +1,8 @@
 
+type NumberPredicate = (n: number) => boolean;
+
 interface Rule {
-  readonly predicate: (n: number) => boolean;
+  readonly predicate: NumberPredicate;
   readonly mapping: string;
 }
 
