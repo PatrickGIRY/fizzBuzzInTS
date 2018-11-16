@@ -2,15 +2,15 @@
 let multipleOf: (m:number) => (n:number) => boolean =
   (m => n => n % m == 0);
 
-let rules: [(n:number) => boolean ,string][] = [
-  [multipleOf(3), "Fizz"]
-, [multipleOf(5), "Buzz"]
+let rules: {predicate :(n:number) => boolean ,mapping: string}[] = [
+  {predicate: multipleOf(3), mapping: "Fizz"}
+, {predicate: multipleOf(5), mapping: "Buzz"}
 ];
 
 export function printIt(n:number):string {
   let result:string = rules
-          .filter(rule => rule[0](n))
-          .map(rule => rule[1])
+          .filter(({predicate}) => predicate(n))
+          .map(({mapping}) => mapping)
           .join('');
   return result != "" ? result : n.toString();
 }
