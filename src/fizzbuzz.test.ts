@@ -7,4 +7,7 @@ describe('Fizzbuzz should', () => {
   test('print a string 2 when given an integer 2', () => {
     expect(printIt(2)).toEqual("2");
   });
+  test('print a string Fizz when given an integer 3', () => {
+    expect(printIt(3)).toEqual("Fizz");
+  });
 });
