@@ -1,5 +1,7 @@
 # Fizzbuzz in TypeScript
 
+Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz “.
+
 ## TypeScript tools installation with `npm`
 ```
 yarn global add typescript
@@ -26,6 +28,7 @@ In `tsconfig.json`
 
 * Activate `"sourceMap": true`
 * Activate `"outDir": "./dist"`
+* Activate `"sourceRoot": "./src"`
 
 ### Check TypeScript compilation
 Create a ts source file `src/index.ts` with the following content :

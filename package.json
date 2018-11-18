@@ -12,6 +12,7 @@
     "typescript": "^3.1.6"
   },
   "scripts": {
+    "build": "tsc",
     "test": "jest --coverage",
     "pretest": "./node_modules/.bin/tslint --format prose --project tsconfig.json"
   },
