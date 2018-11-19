@@ -14,7 +14,8 @@
   "scripts": {
     "build": "tsc",
     "test": "jest --coverage",
-    "pretest": "./node_modules/.bin/tslint --format prose --project tsconfig.json"
+    "pretest": "yarn lint",
+    "lint": "./node_modules/.bin/tslint --format prose --project . src/**/*.{ts,tsx}"
   },
   "keywords": [
     "typecript"
