@@ -14,7 +14,7 @@ const rules: Rule[] = [
   { predicate: multipleOf(5), mapping: 'Buzz' },
 ];
 
-export function printIt(n:number):string {
+export function printIt(n: number): string {
   const result: string = rules
           .filter(({ predicate }) => predicate(n))
           .map(({ mapping }) => mapping)
